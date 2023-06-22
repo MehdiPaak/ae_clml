@@ -113,7 +113,7 @@ def main(hparams):
 
     task = Task.init(
         project_name = "mehdi_test_nlst",
-        task_name = "sample_nlst_nogit_1"
+        task_name = "sample_nlst_git_mp_1"
     )
 
     # get dataset
