@@ -142,7 +142,7 @@ def main(hparams):
     train_size = hparams.train_size
     val_size = hparams.val_size
     log_path = hparams.log_path
-    img_csv = os.path.join(dataset_path, "csv", "files_sample.csv")#hparams.img_csv
+    img_csv = os.path.join(dataset_path, "csv", "nlst_20k.csv")#hparams.img_csv
     img_dir = dataset_path #hparams.img_dir
     num_gpu = hparams.numgpu
 
