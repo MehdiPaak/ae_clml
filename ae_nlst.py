@@ -20,8 +20,8 @@ from pytorch_lightning.loggers import TensorBoardLogger, CSVLogger
 
 # clearml
 # Hyperdatset from allegro
-from allegroai import Task
-from clearml import Dataset
+#from allegroai import Task
+from clearml import Task, Dataset
 
 #
 
@@ -113,12 +113,13 @@ def main(hparams):
 
     task = Task.init(
         project_name = "mehdi_test_nlst",
-        task_name = "sample_nlst_git_mp_1"
+        task_name = "sample_nlst_20k_git_mp"
     )
 
     # get dataset
-    dataset_name = "sample_nlst_local"
+    dataset_name = "s3_nlst_20K_1"
     dataset_project = "mehdi_test_nlst/clml_dataset"
+    dataset_id = "bb4cd618171248abaa04abf6c56dd17b"
 
     dataset_path = Dataset.get(
         dataset_name=dataset_name,
