@@ -148,7 +148,7 @@ def main(hparams):
     val_size = hparams.val_size
     log_path = hparams.log_path
     img_csv = os.path.join(dataset_path, "csv", "nlst_20k.csv")#hparams.img_csv
-    img_dir = dataset_path #hparams.img_dir
+    img_dir = os.path.join(dataset_path, "nlst_small") #hparams.img_dir
     num_gpu = hparams.numgpu
 
     logger = TensorBoardLogger(log_path, name="my_model")
