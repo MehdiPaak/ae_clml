@@ -121,9 +121,14 @@ def main(hparams):
     dataset_project = "mehdi_test_nlst/clml_dataset"
     dataset_id = "bb4cd618171248abaa04abf6c56dd17b"
 
+    # dataset_path = Dataset.get(
+    #     dataset_name=dataset_name,
+    #     dataset_project=dataset_project,
+    #     only_completed=False
+    #     ).get_local_copy()
+    
     dataset_path = Dataset.get(
-        dataset_name=dataset_name,
-        dataset_project=dataset_project,
+        dataset_id=dataset_id,
         only_completed=False
         ).get_local_copy()
 
